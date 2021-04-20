@@ -1,5 +1,7 @@
 /* debug */
 
+
+
 /* /debug */
 
 * {
@@ -42,7 +44,7 @@ main {
 
 /* ----- nav ----- */
 main > #nav {
-  height: calc(100vh - 60px);
+  height: 100%;
   width: 200px;
   font-size: 0.8em;
 }
@@ -118,6 +120,7 @@ main > #nav {
 }
 
 .playlist_list {
+  /* height: 100%; */
   overflow-y: auto;
 }
 
@@ -209,6 +212,101 @@ footer {
   z-index: 2;
   height: 60px;
   background-color: #282828;
+  display: flex;
+  justify-content: space-between;
+}
+footer > .ft_left i,
+footer > .ft_right i {
+  margin: 1px;
+  font-size: 0.7em;
+}
+
+.ft_left,
+.ft_right {
+  width: 200px;
+}
+.ft_center {
+  width: 40%;
+}
+
+/* ft left */
+.ft_left {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.ft_left .cover,
+.ft_left .control {
+  width: 20%;
+}
+.ft_left .title {
+  width: 40%;
+}
+
+.cover img {
+  width: 100%;
+}
+
+.title h5,
+.ft_right i,
+.ft_center i,
+.ft_center label {
+  color: #ffffff;
+}
+.title a,
+.song_time label {
+  font-size: 0.7em;
+}
+.title a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+/* ft right */
+.ft_right {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.ft_right .volume {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+.ft_right input {
+  width: 80%;
+}
+
+/* ft center */
+.ft_center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.song_control,
+.song_time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.song_control i:not(.fa-2x) {
+  font-size: 0.8em;
+  margin: 0 5px;
+}
+.fa-2x {
+  font-size: 1.6em;
+  margin: 3px 10px;
+}
+.fa-2x:hover {
+  transform: scale(1.1);
+}
+
+.song_time input {
+  width: 70%;
+  margin: 0 15px;
 }
 
 /* ----- media ----- */
@@ -268,5 +366,24 @@ footer {
   /* ----- upgrade ----- */
   main > #upgrade {
     width: calc(100% - 40px);
+  }
+
+  /* ----- footer ----- */
+  .ft_left,
+  .ft_right {
+    width: 29%;
+  }
+  .title h5 {
+    color: #ffffff;
+  }
+}
+
+/* xxs */
+@media screen and (max-width: 356px) {
+  .ft_left .title {
+    font-size: 0.7em;
+  }
+  .ft_right progress {
+    width: 60%;
   }
 }
