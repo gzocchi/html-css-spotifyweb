@@ -1,6 +1,41 @@
 /* debug */
 
+/* ----- overview ----- */
+main > #overview {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-top: 60px;
+  width: calc(100% - 200px);
+  background-color: #141922;
+}
+#overview > header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+#overview a {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: .8em;
+  padding: 5px;
+}
+/* #overview .active {
+  border-bottom: 1px solid #a1ed2e;
+} */
 
+.gallery {
+  padding: 10px;
+}
+.gallery h2 {
+  color: #ffffff;
+  font-size: 1.3em;
+ 
+}
+.gallery .subtitle{
+font-size: .8em;
+}
 
 /* /debug */
 
@@ -100,7 +135,7 @@ main > #nav {
 .playlist_menu {
   margin: 10px 10px;
 }
-.playlist_menu h2 {
+.playlist_menu h3 {
   margin-top: 15px;
   margin-bottom: 5px;
   color: #ffffff;
@@ -166,7 +201,7 @@ main > #nav {
   font-weight: 700;
 }
 
-/* ----- gallery ----- */
+/* ----- overview ----- */
 main > #overview {
   position: absolute;
   top: 0;
