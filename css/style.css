@@ -1,4 +1,25 @@
 /* debug */
+/* #overview .active {
+  border-bottom: 1px solid #a1ed2e;
+} */
+
+#overview header a {
+  position: relative;
+}
+#overview header span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
+  height: 100%;
+  width: 40%;
+  border-bottom: 2px solid transparent;
+}
+
+#overview header > a.active span {
+  border-bottom: 2px solid #a1ed2e;
+}
 
 /* /debug */
 
@@ -357,6 +378,7 @@ footer > .ft_right i {
   display: flex;
   justify-content: space-between;
   width: 60%;
+  align-items: center;
 }
 .ft_right input {
   width: 80%;
