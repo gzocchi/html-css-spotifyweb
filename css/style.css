@@ -1,7 +1,4 @@
 /* debug */
-/* #overview .active {
-  border-bottom: 1px solid #a1ed2e;
-} */
 
 #overview header a {
   position: relative;
@@ -75,7 +72,7 @@ main > #nav {
   flex-direction: column;
 }
 
-.icon_menu{
+.icon_menu {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -212,9 +209,6 @@ main > #overview {
   font-size: 0.8em;
   padding: 5px;
 }
-/* #overview .active {
-  border-bottom: 1px solid #a1ed2e;
-} */
 
 /* gallery */
 .gallery {
@@ -380,7 +374,8 @@ footer > .ft_right i {
   width: 60%;
   align-items: center;
 }
-.ft_right input {
+.ft_right input,
+.ft_right .range {
   width: 80%;
 }
 
@@ -409,9 +404,17 @@ footer > .ft_right i {
   transform: scale(1.1);
 }
 
-.song_time input {
+.song_time input,
+.song_time .range {
   width: 70%;
   margin: 0 15px;
+}
+
+.ft_center .progress {
+  width: 12%;
+}
+.ft_right .progress {
+  width: 57%;
 }
 
 /* ----- media ----- */
@@ -498,7 +501,8 @@ footer > .ft_right i {
   .ft_left .title {
     font-size: 0.7em;
   }
-  .ft_right progress {
+  .ft_right input,
+  .ft_right .range {
     width: 60%;
   }
 }
