@@ -450,7 +450,7 @@ footer > .ft_right i {
   .icon_menu img {
     margin: 3px auto;
   }
-  .icon.active {
+  .icon.active a {
     border-color: transparent;
   }
   .icon,
